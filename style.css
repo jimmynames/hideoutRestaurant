@@ -1,0 +1,565 @@
+/*
+ Theme Name:   Twenty Sixteen Child
+ Theme URI:    http://thehideout.dev/
+ Description:  Custom edit of 2016 WP Theme to make site unique and fit brief. 
+ Author:       Jimmy Names
+ Author URI:   http://jimbongo.com
+ Template:     twentysixteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  twenty-sixteen-child
+*/
+
+@import "../twentysixteen/style.css";
+
+/*//////         All Pages        ////////*/
+
+a {
+    color: #1a1a1a;   
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    line-height: 1.6em;
+}
+
+.site-header {
+    padding: 1.25em 4.5455%;
+}
+
+.site-footer {
+    padding: 0 4.5455% 1.5em;
+}
+
+     /* Responsive */
+/* TRYING TO GET RID OF BLACK SPACE */
+/*
+@media only screen and (max-width: 766px) {
+    #page {
+        min-height: 100%;
+    }
+    .site-inner {
+        min-height: 90%;
+       
+    }
+} */
+
+@media only screen and (max-width: 936px) {
+    
+    .entry-content,
+    .site-content {
+    margin-right: 10%;
+    margin-left: 10%;
+}   
+} 
+ @media only screen and (max-width: 735px) {
+    .entry-content, 
+    .site-content {  
+        margin-right: 7.6923%;
+        margin-left: 7.6923%;
+    }
+ }
+
+
+/* Removes border
+        Work on Contact page bottom black part!!
+*/
+@media and screen and (max-width: 770px ) {
+    .site {
+        margin: none;
+    }
+    
+    body {
+        background: none;
+    }
+}
+
+/*//////         Navigation        ////////*/
+
+button, button:focus,
+a,
+a:focus,
+.dropdown-toggle,
+.dropdown-toggle:focus {
+    outline: none;
+}
+
+.menu-toggle {
+    border: none;   
+}
+
+.menu-toggle.toggled-on,
+.menu-toggle.toggled-on:hover,
+.menu-toggle.toggled-on:focus {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.menu-toggle:hover, .menu-toggle:focus {
+    border-color: #fff;   
+}
+
+/*//////         Footer        ////////*/
+
+                /* Instagram */
+#menu-item-30 a:hover:before,
+#menu-item-30 a:focus:before {
+    color: #125688;
+}
+                /* Facebook */
+#menu-item-32 a:hover:before,
+#menu-item-32 a:focus:before  {
+    color: #3b5998;
+}
+                /* TripAdvisor */
+#menu-item-80 a:hover:before,
+#menu-item-80 a:focus:before {
+    color: #589442;
+} 
+            /* Responsive */
+
+/*Center's social links for iphone4 and smaller phones*/
+@media only screen and (max-width: 480px) {
+    .menu-social-container {
+        text-align: center;
+    }
+    
+    .menu-social-container ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        /* For IE, the outcast */
+        zoom:1;
+        *display: inline;
+    }
+    .menu-social-container li {
+        float: left;
+        padding: 2px 5px;
+    }
+}
+
+@media only screen and (max-width: 736px) 
+    and (orientation: landscape) {
+    .menu-social-container {
+        text-align: center;
+    }
+    
+    .menu-social-container ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        /* For IE, the outcast */
+        zoom:1;
+        *display: inline;
+    }
+    .menu-social-container li {
+        float: left;
+        padding: 2px 5px;
+    }
+}
+
+/*//////         Landing Page        ////////*/
+
+.wp-image-54 {
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.title-page-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.shadow {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+#title-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 66.66%;   
+}
+
+#main-title {   
+   font-family: Montserrat, "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5em;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.title-text {
+    font-size: 0.9em;
+    line-height: 1.1em;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    -webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+    /* Responsive */ 
+/* Desktops to make sure in any size screen info displayed correctly */
+@media only screen and (max-width: 474px) {
+    #menu-title {
+        width: 100%;
+    }
+    
+    #title-container {
+        width: 100%;   
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #title-container {
+        padding: 20px;   
+    }
+}
+/* iphone 4 slash small phones landscape */
+@media only screen and (max-width: 480px)
+    and (orientation: landscape) {
+    #title-container {
+        width: 100%;  
+    }
+}
+/* iphone 4 slash small phones */
+@media only screen and (max-width: 320px) {
+        #title-container {
+        width: 100%;
+    }
+        #main-title {
+        font-size: 1.5em;
+        }
+}
+
+/* ipad slash tablets */
+@media only screen and (max-width:768px) {
+        #page {
+            min-height: 100%;
+}
+}
+
+/*//////         About Page        ////////*/
+
+#aboutHeader {
+    font-size: 40px;
+    font-size: 2.5rem;
+    line-height: 1.225;
+    margin-bottom: 1.05em;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    clear: both;
+    box-sizing: inherit;
+}
+
+.wp-image-87, 
+.wp-image-77 {
+    -moz-box-shadow:0px 0px 7px #000000;
+    -webkit-box-shadow:0px 0px 7px #000000;
+    box-shadow:0px 0px 7px #000000;   
+}
+
+    /* Thumbnail Images */
+
+.thumbnail-container {
+    text-align: center;
+}
+
+.about-container {
+    box-sizing: border-box;
+}   
+
+.about-div {
+    display: inline-block;
+    height: 163px;
+    width: 184px;
+    vertical-align: top;
+    margin-bottom: 0.5em;
+}
+
+.about-thumbnails:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=40);
+}
+
+.about-name {
+    font-size: 0.8rem; 
+    text-align: center;
+}
+
+.about-name {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.about-thumbnails {
+    
+    border-radius: 50%;
+    height: 82px;
+    width: 82px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    
+}
+
+.thumbnail-text {
+    font-style: italic;
+    width: 50%;
+    text-align: center;
+    font-size: 0.6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Responsive */
+
+@media only screen and (max-width 480px) {
+    .thumbnail-container {
+        width: 100%;
+}
+    .about-div {
+        width: 170px;
+    }
+}
+ 
+
+
+/*//////         Events Page        ////////*/
+
+/* Write media query that if smaller than, then align center text and image */
+
+#events-newsletter-link {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.event-image {
+    float: left;   
+}
+
+.event-text {
+    float: right;   
+    width: 33.3%;
+}
+
+.event-p1 {
+    margin-top: 1em;   
+}
+        /* Responsive */
+
+@media only screen and (max-width: 1066px) {
+    .event-text {
+        float: left;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 998px) {
+    
+    .event-container {
+        width: 90%;
+        padding: 5%;
+    }
+
+    .event-image, 
+    .event-text {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/*//////         Berkhamsted Page        ////////*/
+
+#wpgmza_map {
+    box-sizing: content-box;
+    margin-bottom: 0.5rem;
+}
+
+
+#book-berkhamsted-link {
+    color: #007acc;
+    text-decoration: underline;
+}
+        /* Button */
+
+.book-button {
+    
+    background: #1a1a1a;
+    text-decoration: none!important;
+    width: 100%;
+    /*grey === #d1d1d1*/
+    padding: 0.75rem 3rem;
+    border-radius: 0.317rem;
+    -webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+    letter-spacing: 0.15rem;
+}
+
+.book-button:hover {
+	opacity: 0.85;
+    background: #007acc;
+}
+
+.book-button:active {
+	box-shadow: inset 0 3px 4px hsla(0, 0%, 0%, 0.2);
+} 
+
+
+#Berkhamsted-book-link {
+    color: #fff;
+    font-weight: 700;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;  
+}
+
+
+/*//////         Book a table Page        ////////*/
+
+.rtb-booking-form a {
+    color: #007acc;      
+}
+
+.rtb-booking-form .reservation,
+.contact,
+.personalise, 
+.oprin,
+.mc-optin {
+    text-align: center;
+}
+
+.rtb-booking-form button {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;  
+    letter-spacing: 0.15rem;
+    text-transform: none;
+    border-radius: 0.317rem;
+}
+.rtb-booking-form .rtb-error {
+    background-color: #603311;
+    border-radius: 0.317rem;
+}
+
+//*//////         Contact Page        ////////*/
+
+p .contactEmail {
+    color: #1a1a1a!important;
+    text-decoration: none; 
+    box-shadow: none;
+}
+
+.contactEmail:hover {
+    color: #007acc;
+    text-decoration: underline;
+}
+
+.entry-content a, 
+.entry-summary a,
+.taxonomy-description a,
+.logged-in-as a,
+.comment-content a,
+.pingback .comment-body > a,
+.textwidget a, 
+.entry-footer a:hover,
+.site-info a:hover
+ {
+    box-shadow: none;
+}
+
+.contactEmail a:hover,
+.contactEmail a:focus,
+.contactEmail a:active {
+    text-decoration: underline;
+    text-weight: bold;
+    color: #007acc;
+}
+
+p .contact-email a {
+    color: #1a1a1a;
+    margin-bottom: 1em;
+    -webkit-margin-after: 1em;
+}
+.contact-container {
+    display: inline;
+    
+}
+
+.contact-link {
+    float: right;
+    margin-left: 20px;
+    color: #1a1a1a;
+    text-underline-position: none;
+    text-decoration: none!important;
+}
+
+.contact-link a,
+.contact-link a:hover,
+.contact-link a:active,
+.contact-link a:focus{
+    text-decoration: underline;
+    text-weight: bold;;
+}
+
+#Instagram-contact-link a {
+    text-decoration: none;   
+}
+
+#Instagram-contact-link:hover,
+#Instagram-contact-link:active,
+#Instagram-contact-link:focus {
+    color: #125688;
+    text-decoration: underline;
+    font-weight: 900;
+    outline-color: #125688;
+}
+                /* Facebook */
+#Facebook-contact-link:hover,
+#Facebook-contact-link:active,
+#Facebook-contact-link:focus {
+    color: #3b5998;
+    text-decoration: underline;
+    font-weight: 900;
+    outline-color: #3b5998;
+}
+                /* TripAdvisor */
+#Tripadvisor-contact-link:hover,
+#Tripadvisor-contact-link:active,
+#Tripadvisor-contact-link:focus {
+    color: #589442;
+    text-decoration: underline;
+    font-weight: 900;
+    outline-color: #589442;
+}
+
+/* Responsive */ 
+
+@media only screen and (max-width: 770px) {
+    .contact-link {
+        display: block;
+        float: none;
+        padding-bottom: 14px;
+        
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .contactEmail {
+        font-size: 0.95em;
+}
+}
+
+
